@@ -88,7 +88,7 @@ const imageCartTemplate = images.map((product) => createImagesCardTemplate(produ
 const imagesGalleryEl = document.querySelector('.gallery');
 imagesGalleryEl.innerHTML = imageCartTemplate;
 
-new SimpleLightbox('.gallery a', { 
+new SimpleLightbox('.gallery a',{ 
   captions: true,
   captionsData: 'alt',
   captionDelay: 250,
