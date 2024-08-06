@@ -72,7 +72,7 @@ const images = [
 
 const createImagesCardTemplate = image => {
     return `
-   <li class="gallery-link"
+   <li class="gallery-item"
    <a href="${image.original}">
     <img 
 			class="gallery-image" 
