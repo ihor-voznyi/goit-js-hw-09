@@ -73,7 +73,7 @@ const images = [
 const createImagesCardTemplate = image => {
     return `
    <li class="gallery-item">
-   <a href="${image.original}">
+   <a class="gallery-link" href="${image.original}">
     <img 
 			class="gallery-image" 
 			src="${image.preview}" 
