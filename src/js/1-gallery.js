@@ -72,7 +72,7 @@ const images = [
 
 const createImagesCardTemplate = image => {
     return `
-   <li class="gallery-item"
+   <li class="gallery-item">
    <a href="${image.original}">
     <img 
 			class="gallery-image" 
@@ -80,6 +80,7 @@ const createImagesCardTemplate = image => {
 			alt="${image.description}" 
 			/>
 	</a>
+    </li>
     `
 };
 
