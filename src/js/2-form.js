@@ -23,7 +23,7 @@ fillFormFields();
 
 const onFormFieldChange = event => {
     const fieldName = event.target.name;
-    const fieldValue = event.target.value;
+    const fieldValue = event.target.value.trim();
 
     formData[fieldName] = fieldValue;
 
@@ -41,6 +41,7 @@ const onFeedbackFormSubmit = event => {
         return;
     }
     event.target.reset();
+    formData = { email: "", message: "" };
     localStorage.removeItem('feedback-form-state');
     console.log(formData);
     
