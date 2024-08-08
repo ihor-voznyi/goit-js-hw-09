@@ -40,10 +40,12 @@ const onFeedbackFormSubmit = event => {
         alert('Fill please all fields');
         return;
     }
+
+    console.log({ email, message });
+
     event.target.reset();
     formData = { email: "", message: "" };
     localStorage.removeItem('feedback-form-state');
-    console.log(formData);
     
 };
 
